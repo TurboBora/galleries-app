@@ -1,23 +1,30 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import AllGalleries from '../views/AllGalleries.vue'
+import Register from '../views/Register.vue'
+
 
 Vue.use(VueRouter)
 
 const routes = [
+  /* 
+      <router-link to="/">All Galleries</router-link> |
+      <router-link to="/my-galleries">My Galleries</router-link> |
+      <router-link to="/login">Login</router-link> |
+      <router-link to="/register">Register</router-link> |
+      <router-link to="/create">Create New Gallery</router-link> |
+      <router-link to="/logout">Logout</router-link>
+  */
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'AllGalleries',
+    component: AllGalleries
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: '/register',
+    name: 'Register',
+    component: Register,
+  },
 ]
 
 const router = new VueRouter({
