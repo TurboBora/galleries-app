@@ -16,11 +16,12 @@ class AuthService extends BaseService {
         return this.HTTP.post('/logout');
     }
 
-    async getMyProfile() {
-        const { data } = await this.HTTP.get('/me');
+    async me() {
+        const { data } = await this.HTTP.post('/current-user');
+        console.log(data);
         return data;
     }
 }
 
-const auth = new AuthService();
-export default auth;
+export default new AuthService();
+
