@@ -12,7 +12,7 @@
           <template #button-content>
             <em>Member Area</em>
           </template>
-          <b-dropdown-item to="Register">Register</b-dropdown-item>
+          <b-dropdown-item to="Register">Register</b-dropdown-item> 
           <b-dropdown-item to="Login">Login</b-dropdown-item>
         </b-nav-item-dropdown>
         <b-nav-item-dropdown v-else>

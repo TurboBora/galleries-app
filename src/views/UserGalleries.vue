@@ -1,11 +1,24 @@
 <template>
   <b-container>
-      <h1>USER PROFILE PAGE</h1>
+      <h1>MY GALLERY PAGE</h1>
+
+      <b-card >
+
+      </b-card>
   </b-container>
 </template>
 
 <script>
 export default {
+  computed: {
+    
+  },
+  methods: {
+    // ...mapActions('galleries',['getCurrentUserGallery'])
+  },
+  created() {
+    
+  },
 }
 </script>
 

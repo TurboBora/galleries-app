@@ -27,6 +27,7 @@ const routes = [
     path: '/register',
     name: 'Register',
     component: Register,
+    meta: { guestRequired: true }
   },
   {
     path: '/login',
@@ -44,9 +45,6 @@ const routes = [
     component: UserGalleries,
     meta: { authRequired: true },
   },
-  {
-    
-  }
 ]
 
 const router = new VueRouter({

@@ -1,5 +1,5 @@
 <template>
-  <div class="m-5 p-5">
+  <div class="m-1 p-1">
     <b-form @submit.prevent="submit">
       <div class="alert alert-danger" v-if="user.errors.length">
         <ul class="mb-0">

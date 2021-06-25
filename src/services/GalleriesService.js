@@ -2,7 +2,10 @@ import BaseService from './BaseService';
 
 class GalleriesService extends BaseService {
 
-    // get,post,put,delete
+    async getAll(){
+        const { data } = await this.HTTP.get('/galleries');
+        return data;
+    }
     
 }
 
